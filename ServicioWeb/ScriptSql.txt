@@ -1,0 +1,18 @@
+-- create a table
+CREATE TABLE persona (
+  id INTEGER PRIMARY KEY,
+  nombre varchar(30) NOT NULL,
+  apellido_paterno varchar(30) NOT NULL,
+  apellido_materno varchar(30) NOT NULL,
+  edad INTEGER NOT NULL,
+  peso double NOT NULL,
+  estatura double not NULL,
+  estado_civil int NOT NULL
+  --se puede almacenar con un codigo numerico 
+  -- 1 para soltero, 2 para casasdo, 3 para divorciado etc.
+);
+-- insert some values
+INSERT INTO persona VALUES (1, 'Edson', 'Perez', 'Robledo', '24', '65','1.65',1);
+INSERT INTO persona VALUES (2, 'Juan', 'Perez', 'Lopez', '26', '64','1.5',3);
+INSERT INTO persona VALUES (3, 'Alan', 'Perez', 'Solis', '23', '84','1.54',2);
+INSERT INTO persona VALUES (4, 'Jose', 'Lopez', 'Robledo', '27', '90','1.58',1);
